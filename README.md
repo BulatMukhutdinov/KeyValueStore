@@ -22,3 +22,6 @@ ROLLBACK            // revert to state prior to BEGIN call
 2) Multithreading is not supported. I am not sure anyway how it is possible to multithread this console app but I am definitely sure that there are smart asses that would find a way
 3) No prior knowledge about how frequent and how many operations are performed so load factor and initial capacity are left on default values
 4) Performance prevails memory
+
+# Possible enhancements
+1) If the size of the storage constantly growing along with the nesting level, instead of copying the maps to the child Transaction we can gather diffs and later on apply these diffs to parent's maps
