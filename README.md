@@ -17,7 +17,7 @@ COMMIT              // complete the current transaction
 ROLLBACK            // revert to state prior to BEGIN call
 ```
 
-# Assuptions
+# Assumptions
 1) Storage size is limited to hashmap size
 2) Multithreading is not supported. I am not sure anyway how it is possible to multithread this console app but I am definitely sure that there are smart asses that would find a way
 3) No prior knowledge about how frequent and how many operations are performed so load factor and initial capacity are left on default values
